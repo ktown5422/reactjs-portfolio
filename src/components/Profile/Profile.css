@@ -49,6 +49,10 @@
     font-weight: 400 !important;
 }
 
+.timelineItem_text > a {
+    text-decoration: none;
+}
+
 .timelineItem_text > span {
     color: black;
 }
