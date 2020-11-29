@@ -11,7 +11,7 @@
 }
 
 .custom_btn .btn_icon_container {
-    color: #000 !important;
+    color: var(--main-color) !important;
     background: #fff !important;
     border-radius: 50px !important;
     height: 27px !important;
@@ -24,7 +24,7 @@
 }
 
 .custom_btn .btn_icon_container > .MuiSvgIcon-root {
-    
+
 }
 
 .custom_btn .btn_text {
