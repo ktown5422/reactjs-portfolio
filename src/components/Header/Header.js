@@ -12,6 +12,7 @@ import { Link, NavLink, withRouter } from "react-router-dom";
 import { HomeRounded, Telegram } from "@material-ui/icons";
 import resumeData from "../../utils/resumeData";
 import CustomButton from "../Button/Button";
+import './Header.css';
 
 const Header = (props) => {
     const pathName = props?.location?.pathName;
@@ -27,21 +28,23 @@ const Header = (props) => {
         <Navbar.Toggle />
 
         <Navbar.Collapse>
-            <Nav>
+            <Nav className="header_left">
             {/* Resume Link */}
                 <Nav.Link 
-                as={NavLink} 
-                to="/" 
-                className={pathName == "/" ? "header_link_active" : "header_link"}>
-                Resume
+                    as={NavLink} 
+                    to="/" 
+                    className={
+                        pathName === "/" ? "header_link_active" : "header_link"}>
+                    Resume
                 </Nav.Link>
 
              {/* Portfolio Link */}
-             <Nav.Link 
-                as={NavLink} 
-                to="/portfolio" 
-                className={pathName == "/portfolio" ? "header_link_active" : "header_link"}>
-                Portfolio
+                <Nav.Link 
+                    as={NavLink} 
+                    to="/portfolio" 
+                    className={
+                        pathName ===  "/portfolio" ? "header_link_active" : "header_link"}>
+                    Portfolio
                 </Nav.Link>
             </Nav>
 
@@ -58,4 +61,4 @@ const Header = (props) => {
   );
 };
 
-export default Header;
+export default withRouter(Header);
