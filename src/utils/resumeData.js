@@ -5,7 +5,7 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     name: 'Kevin Townson',
-    title: 'Front End Developer',
+    title: 'Full Stack Developer',
 
     email: 'ktown5422@gmail.com',
     phone: '314-498-1411',

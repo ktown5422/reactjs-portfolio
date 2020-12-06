@@ -21,6 +21,7 @@ function App() {
         <Grid item xs>
           <Router>
             <Header />
+            <div className="main-content container_shadow">
               <Switch>
                 <Route path="/portfolio">
                   <Portfolio />
@@ -29,6 +30,7 @@ function App() {
                   <Resume />
                 </Route>
               </Switch>
+            </div>
           </Router>
           <Footer />
         </Grid>
