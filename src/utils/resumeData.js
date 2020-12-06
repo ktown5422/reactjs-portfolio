@@ -23,4 +23,6 @@ export default {
         icon: <GitHubIcon />,
       },
     },
+
+    about: "LaunchCode and Savvy Coder Graduate Looking to expand skills in Software Development as a Junior Software Engineer. I'm passionate about technology and working with creative problem solvers to build efficient and engaging web solutions."
 };

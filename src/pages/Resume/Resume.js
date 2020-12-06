@@ -1,15 +1,19 @@
 import React from 'react';
 import { Grid, Typography } from "@material-ui/core";
 import "./Resume.css";
+import resumeData from "../../utils/resumeData";
 
 const Resume = () => {
     return (
     <> 
         {/* About Me */} 
-        <Grid container className="section">
-            <Grid item className="section_title">
+        <Grid container className="section pb_45">
+            <Grid item className="section_title mb_30">
                 <span></span>
-                <Typography variant="h6">About Me</Typography>
+                <h6 className="section_title_text ">About Me</h6>
+            </Grid>
+            <Grid item xs={12}>
+                <Typography varient="body2" className="aboutme_text">{resumeData.about}</Typography>
             </Grid>
         </Grid>
 

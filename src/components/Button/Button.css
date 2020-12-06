@@ -11,7 +11,7 @@
 }
 
 .custom_btn .btn_icon_container {
-    color: var(--main-color) !important;
+    color: black !important;
     background: #fff !important;
     border-radius: 50px !important;
     height: 27px !important;
