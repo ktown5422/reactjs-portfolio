@@ -24,7 +24,7 @@ export default {
       },
     },
 
-    about: "LaunchCode and Savvy Coder Graduate Looking to expand skills in Software Development as a Junior Software Engineer. I'm passionate about technology and working with creative problem solvers to build efficient and engaging web solutions.",
+    about: "LaunchCode and Savvy Coder Graduate Looking to expand skills in Software Development as a Junior Software Engineer. I am passionate about technology and working with creative problem solvers to build efficient and engaging web solutions.",
 
     experience: [
       {
@@ -56,9 +56,9 @@ export default {
         description: "An accelerated 11-week coding course that includes the fundamentals of HTML5, CSS3, functional and object-oriented JavaScript. Training also covered advanced single web page implementation, interactions through the DOM, Web API’s, JSON and Node.js. Leadership and organizational skills were also refined with Agile fundamentals certification and training.",
       },
       {
-        title: "FreeCodeCamp",
-        date: "May 4 2015 - Present",
-        description: "Completed Online Courses to further my learning in HTML/CSS and Javascript - https://www.codecademy.com/profiles/ktown5422 ",
+        title: "Codecademy",
+        date: "May 2015 - Present",
+        description: "Completed Online Courses to further my learning in HTML/CSS and Javascript https://www.codecademy.com/profiles/ktown5422 ",
       },
     ]
   };
