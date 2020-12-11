@@ -1,6 +1,7 @@
 import React from 'react';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import { WebOutlined } from '@material-ui/icons';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -28,7 +29,7 @@ export default {
 
     experience: [
       {
-        title: "Web Developer/Techniction - Cyber Bar",
+        title: "Web Developer/Technition - Cyber Bar",
         date: "July 2020 - Present",
         description: "We Offer iPhone Screen Replacement and Web Development Services"
       },
@@ -59,6 +60,48 @@ export default {
         title: "Codecademy",
         date: "May 2015 - Present",
         description: "Completed Online Courses to further my learning in HTML/CSS and Javascript https://www.codecademy.com/profiles/ktown5422 ",
+      },
+    ],
+
+    services: [
+       {
+         title: "Web Developer",
+         description: "We Specialize In building beautiful, responsive websites For small businesses.",
+         icon: <WebOutlined />,
+       },
+       {
+        title: "Cellphone Screen Repair",
+        description: "We repair cell phone screens, charging ports, batteries, headphone jacks, broken cameras and many other types of repairs",
+        icon: <WebOutlined />,
+      },
+      {
+        title: "Fast Delivery",
+        description: "We deliver your product as fast as possible",
+        icon: <WebOutlined />,
+      },
+    ],
+
+    skills: [
+      {
+        title: "Front-End",
+        description: [
+          "React-JS",
+          "Javascript",
+          "Boostrap",
+          "Material UI",
+        ],
+      },
+      {
+        title: "Back-End",
+        description: ["NodeJS", "Express", "Python"],
+      },
+      {
+        title: "Databases",
+        decription: ["MySQL", "MongoDB"],
+      },
+      {
+        title: "Source Control",
+        description: ["Git", "Github", "SCRUM/Agile"],
       },
     ]
   };

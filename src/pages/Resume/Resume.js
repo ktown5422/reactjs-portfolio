@@ -1,5 +1,5 @@
 import React from "react";
-import { Grid, Typography } from "@material-ui/core";
+import { Grid, Icon, Typography } from "@material-ui/core";
 import "./Resume.css";
 import resumeData from "../../utils/resumeData";
 import CustomTimeline, {
@@ -92,7 +92,26 @@ const Resume = () => {
       </Grid>
 
       {/* Services */}
-      <Grid container className="section"></Grid>
+      <Grid container className="section">
+        <Grid item className="section_title mb_30">
+          <span></span>
+          <h6 className="section_title_text ">My Services</h6>
+        </Grid>
+
+        <Grid item xs={12}>
+          <Grid container>
+            {resumeData.services.map(service => (
+                <Grid item xs={12} sm={6} md={3}>
+                  <div className="service">
+                    <Icon className="service_icon">{service.icon}</Icon>
+                    <Typography className="service_title">{service.title}</Typography>
+                    <Typography className="service_description">{service.description}</Typography>
+                  </div>
+                </Grid>
+            ))}
+          </Grid>
+        </Grid>
+      </Grid>
 
       {/* Skills */}
       <Grid container className="section"></Grid>
