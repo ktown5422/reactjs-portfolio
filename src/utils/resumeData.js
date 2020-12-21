@@ -2,6 +2,8 @@ import React from 'react';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
 import { WebOutlined } from '@material-ui/icons';
+import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
+import TimerIcon from '@material-ui/icons/Timer';
 
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
@@ -29,7 +31,7 @@ export default {
 
     experience: [
       {
-        title: "Web Developer/Technition - Cyber Bar",
+        title: "Web Developer/Technician - Cyber Bar",
         date: "July 2020 - Present",
         description: "We Offer iPhone Screen Replacement and Web Development Services"
       },
@@ -65,19 +67,19 @@ export default {
 
     services: [
        {
-         title: "Web Developer",
+         title: "Web Development",
          description: "We Specialize In building beautiful, responsive websites For small businesses.",
          icon: <WebOutlined />,
        },
        {
         title: "Cellphone Screen Repair",
         description: "We repair cell phone screens, charging ports, batteries, headphone jacks, broken cameras and many other types of repairs",
-        icon: <WebOutlined />,
+        icon: <PhoneAndroidIcon />,
       },
       {
         title: "Fast Delivery",
         description: "We deliver your product as fast as possible",
-        icon: <WebOutlined />,
+        icon: <TimerIcon />,
       },
     ],
 
@@ -97,7 +99,7 @@ export default {
       },
       {
         title: "Databases",
-        decription: ["MySQL", "MongoDB"],
+        description: ["MySQL", "MongoDB"],
       },
       {
         title: "Source Control",
