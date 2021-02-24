@@ -5,10 +5,12 @@ import { WebOutlined } from '@material-ui/icons';
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import TimerIcon from '@material-ui/icons/Timer';
 
+
+
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     name: 'Kevin Townson',
-    title: 'Full Stack Developer',
+    title: 'Front End Developer',
 
     email: 'ktown5422@gmail.com',
     phone: '314-498-1411',
@@ -104,6 +106,41 @@ export default {
       {
         title: "Source Control",
         description: ["Git", "Github", "SCRUM/Agile"],
+      },
+    ],
+
+    portfolio: [
+      {
+        tag: 'React',
+        image: 'picbk',
+        title: "React Project 1",
+        caption: "a short description",
+        description: "This is my project description. Please fill it in.",
+        links: [
+          { links: "https://github.com/ktown5422", icon: <GitHubIcon /> }
+        ], 
+      },
+
+      {
+        tag: 'Python',
+        image: 'picbk',
+        title: "Python Project 1",
+        caption: "a short description",
+        description: "This is my project description. Please fill it in.",
+        links: [
+          { links: "https://github.com/ktown5422", icon: <GitHubIcon /> }
+        ], 
+      },
+
+      {
+        tag: 'React',
+        image: 'picbk',
+        title: " React Project 2",
+        caption: "a short description",
+        description: "This is my project description. Please fill it in.",
+        links: [
+          { links: "https://github.com/ktown5422", icon: <GitHubIcon /> }
+        ], 
       },
     ]
   };
