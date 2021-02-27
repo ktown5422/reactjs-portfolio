@@ -47,7 +47,7 @@ const Portfolio = () => {
                 </Tabs>
             </Grid>
             
-            {/* Projects */}
+            {/* Project */}
             <Grid item xs ={12}>
                 <Grid container spacing={3}>
                     {resumeData.portfolio.map((projects) => (
