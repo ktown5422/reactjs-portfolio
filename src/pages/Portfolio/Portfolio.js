@@ -57,7 +57,8 @@ const Portfolio = () => {
                           <Grow in timeout={1000}>
                               <Card className='customCard' onClick={() => setprojectDialog(projects)}>
                                   <CardActionArea>
-                                      <CardMedia className='customCard_image' image={picbk} title={projects.title} />
+                                  {/*portfolio.map(p => {return <img key={p.id} src={p.image} alt="" className='projectDialog_image' />})}; */}
+                                      <CardMedia className='customCard_image' image={projects.image} title={projects.title} />
                                       <CardContent>
                                           <Typography varient={'body2'} className='customCard_title'>{projects.title}</Typography>
                                           <Typography variant='body2' className='customCard_description'>{projects.caption}</Typography>
@@ -73,7 +74,8 @@ const Portfolio = () => {
             </Grid>
             <Dialog open={projectDialog} onClose={() => setprojectDialog(false)} className='projectDialog' fullWidth>
                 <DialogTitle onClose={() => setprojectDialog(false)}>{projectDialog.title}</DialogTitle>
-                <img src={picbk} alt="" className='projectDialog_image' />
+               
+                {/* <img src={picbk} alt="" className='projectDialog_image' /> */}
                 <DialogContent>
                 <Typography className='projectDialog_description'>{projectDialog.description}</Typography>  
                 </DialogContent>

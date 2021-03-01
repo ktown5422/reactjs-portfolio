@@ -4,6 +4,8 @@ import GitHubIcon from '@material-ui/icons/GitHub';
 import { WebOutlined } from '@material-ui/icons';
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import TimerIcon from '@material-ui/icons/Timer';
+import Image1 from '../assets/images/cyberbar.png';
+import Image2 from '../assets/images/picbk.jpg';
 
 
 
@@ -111,8 +113,9 @@ export default {
 
     portfolio: [
       {
+        id: 1,
         tag: 'React',
-        image: 'picbk',
+        image: Image1,
         title: "React Project 1",
         caption: "a short description",
         description: "This is my project description. Please fill it in.",
@@ -122,8 +125,9 @@ export default {
       },
 
       {
+        id: 2,
         tag: 'Python',
-        image: 'picbk',
+        image: Image2,
         title: "Python Project 1",
         caption: "a short description",
         description: "This is my project description. Please fill it in.",
@@ -132,9 +136,10 @@ export default {
         ], 
       },
 
-      {
+      { 
+        id: 3,
         tag: 'React',
-        image: 'picbk',
+        image: Image2,
         title: " React Project 2",
         caption: "a short description",
         description: "This is my project description. Please fill it in.",
