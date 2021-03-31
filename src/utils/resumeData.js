@@ -1,6 +1,7 @@
 import React from 'react';
 import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import GitHubIcon from '@material-ui/icons/GitHub';
+import LanguageIcon from '@material-ui/icons/Language';
 import { WebOutlined } from '@material-ui/icons';
 import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
 import TimerIcon from '@material-ui/icons/Timer';
@@ -116,15 +117,15 @@ export default {
         id: 1,
         tag: 'React',
         image: Image1,
-        title: "React Project 1",
-        caption: "a short description",
-        description: "This is my project description. Please fill it in.",
+        title: "Cyber Bar",
+        caption: "Tech Services",
+        description: "We Offer Cell Phone Screen Replacement and Web Development Services ",
         links: [
-          { links: "https://github.com/ktown5422", icon: <GitHubIcon /> }
+          { links: "https://square.site/book/L8DCC6DQ2FTBQ/cyber-bar-st-louis-mo", icon: <LanguageIcon /> }
         ], 
       },
 
-      {
+      /*{
         id: 2,
         tag: 'Python',
         image: Image2,
@@ -146,6 +147,6 @@ export default {
         links: [
           { links: "https://github.com/ktown5422", icon: <GitHubIcon /> }
         ], 
-      },
+      },*/
     ]
   };
