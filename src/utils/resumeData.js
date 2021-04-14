@@ -104,11 +104,11 @@ export default {
       },
       {
         title: "Databases",
-        description: ["MySQL", "MongoDB"],
+        description: ["MySQL", "PostgreSQL"],
       },
       {
         title: "Source Control",
-        description: ["Git", "Github", "SCRUM/Agile"],
+        description: ["Git", "Github", "Agile Practices"],
       },
     ],
 
