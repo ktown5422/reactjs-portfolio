@@ -8,9 +8,7 @@ import CustomTimeline, {
 } from "../../components/Timeline/Timeline";
 import WorkIcon from "@material-ui/icons/Work";
 import TimelineItem from "@material-ui/lab/TimelineItem";
-import TimelineSeparator from "@material-ui/lab/TimelineSeparator";
 import TimelineDot from "@material-ui/lab/TimelineDot";
-import TimelineConnector from "@material-ui/lab/TimelineConnector";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import SchoolIcon from "@material-ui/icons/School";
 
