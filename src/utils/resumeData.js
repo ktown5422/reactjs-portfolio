@@ -32,18 +32,18 @@ export default {
       },
     },
 
-    about: "LaunchCode and Savvy Coder Graduate Looking to expand skills in Software Development as a Junior Software Engineer. I am passionate about technology and working with creative problem solvers to build efficient and engaging web or mobile applications.",
+    about: "I am passionate about technology and working with creative problem solvers to build efficient and engaging web or mobile applications.",
 
     experience: [
       {
         title: "World Wide Technology - Associate Software Engineer",
         date: "September 2021 - Present",
-        description: "We Offer iPhone Screen Replacement and Web Development Services"
+        description: "The primary role of the Frontend Software Engineer is to bridge the gap between design and development. They ensure that the implementation of user interfaces adhere closely to user centered design practices. Develop interfaces that facilitate those interactions primarily through HTML, CSS and JavaScript. Test and evaluate interaction design and user experience of designs throughout Agile software development and delivery. TDD and Pair daily with other engineers.",
       },
       {
         title: "World Wide Technology - Software Engineer Apprentice",
         date: "May 2021 - September 2021",
-        description: "I specialize in building beautiful, responsive websites for small businesses. I provide useful and meaningful service to customers with their projects. I have the knowledge to complete the assigned task so that the job will be done. Self-managed and resourceful, able to manage a web development project from start to finish.",
+        description: "The primary role of the Frontend Software Engineer is to bridge the gap between design and development. They ensure that the implementation of user interfaces adhere closely to user centered design practices. Develop interfaces that facilitate those interactions primarily through HTML, CSS and JavaScript. Test and evaluate interaction design and user experience of designs throughout Agile software development and delivery. TDD and Pair daily with other engineers.",
       },
       {
         title: "Ramp Agent - Southwest Airlines",
@@ -73,17 +73,17 @@ export default {
     services: [
        {
          title: "Web Development",
-         description: "We Specialize In building beautiful, responsive websites For small businesses.",
+         description: "Web development is the work involved in developing a website for the Internet or an intranet. Web development can range from developing a simple single static page of plain text to complex web applications, electronic businesses, and social network services.",
          icon: <WebOutlined />,
        },
        {
         title: "Mobile App Development",
-        description: "We repair cell phone screens, charging ports, batteries, headphone jacks, broken cameras and many other types of repairs",
+        description: "Mobile application development is the process of creating software applications that run on a mobile device, and a typical mobile application utilizes a network connection to work with remote computing resources.",
         icon: <PhoneAndroidIcon />,
       },
       {
         title: "Test Driven Development",
-        description: "We deliver your product as fast as possible",
+        description: "Test-driven development is a software development process relying on software requirements being converted to test cases before software is fully developed, and tracking all software development by repeatedly testing the software against all test cases.",
         icon: <CodeIcon />,
       },
     ],
