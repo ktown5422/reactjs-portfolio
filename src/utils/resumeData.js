@@ -13,7 +13,7 @@ import Image2 from '../assets/images/picbk.jpg';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
     name: 'Kevin Townson',
-    title: 'Associate Software Engineer',
+    title: 'Software Engineer',
 
     email: 'ktown5422@gmail.com',
     phone: '314-498-1411',

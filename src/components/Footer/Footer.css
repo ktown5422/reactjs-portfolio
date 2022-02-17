@@ -1,6 +1,6 @@
 .footer {
-    background-color: #1e1e1e;
-    color: white;
+    background-color: #9ad1e7;
+    color: black;
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -13,10 +13,10 @@
 .footer .footer_copyright {
     font-size: small;
     text-align: end;
-    color: #9c9c9c;
+    color: white;
 }
 
 .footer .footer_copyright > a {
     text-decoration: none !important;
-    color: var(--main-color);
+    color: black;
 }
