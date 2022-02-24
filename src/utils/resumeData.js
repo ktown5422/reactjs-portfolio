@@ -17,7 +17,7 @@ export default {
 
     email: 'ktown5422@gmail.com',
     phone: '314-498-1411',
-    address: '4818 Washington Blvd, St. Louis MO',
+    address: 'Tech Artista - 4818 Washington Ave, St. Louis MO',
 
     socials: {
       Linkedin: {
