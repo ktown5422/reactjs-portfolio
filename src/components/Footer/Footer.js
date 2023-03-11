@@ -10,9 +10,9 @@ function Footer() {
                 <Typography className="footer_name">{resumeData.name}</Typography>
             </div>
             <div className="footer_right">
-            <Typography className="footer_copyright">
-                Designed and Developed by <a href="/" target=''>Kevin Townson</a>
-            </Typography>
+                <Typography className="footer_copyright">
+                    Developed by <a href="/" target=''>Kevin Townson</a>
+                </Typography>
 
             </div>
 
