@@ -12,21 +12,6 @@ import TimelineDot from "@material-ui/lab/TimelineDot";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import SchoolIcon from "@material-ui/icons/School";
 
-const handleSubmit = (event) => {
-  event.preventDefault();
-
-  const myForm = event.target;
-  const formData = new FormData(myForm);
-
-  fetch("/", {
-    method: "POST",
-    headers: { "Content-Type": "application/x-www-form-urlencoded" },
-    body: new URLSearchParams(formData).toString(),
-  })
-    .then(() => navigate("/thank-you/"))
-    .catch((error) => alert(error));
-};
-
 
 const Resume = () => {
   return (
@@ -165,35 +150,33 @@ const Resume = () => {
 
       {/* Contact */}
       <Grid container spacing={6} className="section pt_45 pb_45">
-        <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
-          {/* Contact Form */}
-          <Grid item xs={12} lg={7}>
-            <Grid container>
-              <Grid item className="section_title mb_30">
-                <span></span>
-                <h6 className="section_title_text">Contact Form</h6>
-              </Grid>
+        {/* Contact Form */}
+        <Grid item xs={12} lg={7}>
+          <Grid container>
+            <Grid item className="section_title mb_30">
+              <span></span>
+              <h6 className="section_title_text">Contact Form</h6>
+            </Grid>
 
-              <Grid item xs={12}>
-                <Grid container spacing={3}>
-                  <Grid item xs={12} sm={6}>
-                    <TextField fullWidth name="name" label="Name" />
-                  </Grid>
-                  <Grid item xs={12} sm={6}>
-                    <TextField fullWidth name="email" label="E-mail" />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <TextField fullWidth name="message" label="Message" multiline rows={4} />
-                  </Grid>
-                  <Grid item xs={12}>
-                    <input type="hidden" name="form-name" value="contact" />
-                    <CustomButton text="Submit" />
-                  </Grid>
+            <Grid item xs={12}>
+              <Grid container spacing={3}>
+                <Grid item xs={12} sm={6}>
+                  <TextField fullWidth name="name" label="Name" />
+                </Grid>
+                <Grid item xs={12} sm={6}>
+                  <TextField fullWidth name="email" label="E-mail" />
+                </Grid>
+                <Grid item xs={12}>
+                  <TextField fullWidth name="message" label="Message" multiline rows={4} />
+                </Grid>
+                <Grid item xs={12}>
+                  <input type="hidden" name="form-name" value="contact" />
+                  <CustomButton text="Submit" />
                 </Grid>
               </Grid>
             </Grid>
           </Grid>
-        </form>
+        </Grid>
 
         {/* Contact Information */}
         <Grid item xs={12} lg={5}>
