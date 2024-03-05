@@ -13,11 +13,11 @@ import Image2 from '../assets/images/picbk.jpg';
 // eslint-disable-next-line import/no-anonymous-default-export
 export default {
   name: 'Kevin Townson',
-  title: 'Software Engineer',
+  title: 'Software Engineer II',
 
   email: 'ktown5422@gmail.com',
   phone: '314-498-1411',
-  address: 'Tech Artista - 4818 Washington Ave, St. Louis MO',
+  address: 'Remote',
 
   socials: {
     Linkedin: {
