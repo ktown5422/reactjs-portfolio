@@ -12,6 +12,20 @@ import TimelineDot from "@material-ui/lab/TimelineDot";
 import TimelineContent from "@material-ui/lab/TimelineContent";
 import SchoolIcon from "@material-ui/icons/School";
 
+const handleSubmit = (event) => {
+  event.preventDefault();
+
+  const myForm = event.target;
+  const formData = new FormData(myForm);
+
+  fetch("/", {
+    method: "POST",
+    headers: { "Content-Type": "application/x-www-form-urlencoded" },
+    body: new URLSearchParams(formData).toString(),
+  })
+    .then(() => navigate("/thank-you/"))
+    .catch((error) => alert(error));
+};
 
 
 const Resume = () => {
@@ -150,7 +164,7 @@ const Resume = () => {
       </Grid>
 
       {/* Contact */}
-      <form name="contact" method="POST" data-netlify="true">
+      <form name="contact" method="POST" data-netlify="true" onSubmit={handleSubmit}>
         <Grid container spacing={6} className="section pt_45 pb_45">
           {/* Contact Form */}
           <Grid item xs={12} lg={7}>
@@ -172,6 +186,7 @@ const Resume = () => {
                     <TextField fullWidth name="message" label="Message" multiline rows={4} />
                   </Grid>
                   <Grid item xs={12}>
+                    <input type="hidden" name="form-name" value="contact" />
                     <CustomButton text="Submit" />
                   </Grid>
                 </Grid>
