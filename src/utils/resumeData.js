@@ -32,7 +32,7 @@ export default {
     },
   },
 
-  about: "I am passionate about technology and working with creative problem solvers to build efficient and engaging web or mobile applications.",
+  about: "I have a strong enthusiasm for technology and enjoy collaborating with innovative thinkers to develop effective and captivating software",
 
   experience: [
     {
