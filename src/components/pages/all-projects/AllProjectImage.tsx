@@ -30,9 +30,9 @@ const AllProjectImage = ({ image, hight, width, title, text }: Props) => {
       />
       <Link href={`/project-details`} className="all-project-link">
         <span className="all-project-link__text-area">
-          <span className="link-title heading-2">Aroha agency website</span>
+          <span className="link-title heading-2">{title}</span>
           <span className="textL link-text">
-            An 12 month long inquiry into italine design,history and culture.
+            {text}
           </span>
         </span>
         <span className="all-project-link__image">

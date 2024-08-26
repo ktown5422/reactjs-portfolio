@@ -14,14 +14,14 @@ const AllProjectBody = () => {
       <div className="all-project-body">
         <div className="all-project__1st-row">
           <div className="all-project__1st-row-1st-column">
-            <AllProjectImage image={image11} width={636} hight={320} />
+            <AllProjectImage image={image11} width={636} hight={320} title="Project 1" />
           </div>
           <div className="all-project__1st-row-2nd-column">
-            <AllProjectImage image={image12} width={636} hight={664} />
+            <AllProjectImage image={image12} width={636} hight={664} title="Project 2" />
           </div>
         </div>
         <div className="all-project__2nd-row">
-          <AllProjectImage image={image13} width={1296} hight={400} />
+          <AllProjectImage image={image13} width={1296} hight={400} title="Project 3" />
         </div>
       </div>
     </div>
