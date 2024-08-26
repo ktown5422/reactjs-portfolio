@@ -18,7 +18,7 @@ const AboutUsTwo = () => {
       <div className="container">
         <Navbar />
         <LinkBackHome />
-        <AboutUsBody image={profileImage} />
+        <AboutUsBody />
         <Footer />
       </div>
       <AboutTopLeftElement />
