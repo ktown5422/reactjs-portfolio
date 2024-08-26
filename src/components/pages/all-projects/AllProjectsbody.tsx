@@ -1,31 +1,18 @@
+// AllProjectBody.tsx
 "use client";
-import image11 from "@/../public/image/Cyber-Bar(1).png";
-import image12 from "@/../public/image/Cyber-Bar(1).png";
-import image13 from "@/../public/image/schnucksimg.webp";
-import image21 from "@/../public/image/all-project-21.png";
-import image31 from "@/../public/image/all-project-31.png";
-import image32 from "@/../public/image/all-project-32.png";
-
-import AllProjectImage from "./AllProjectImage";
+import ProjectDetailsBody from "../project-details/ProjectDetailsBody";
 
 const AllProjectBody = () => {
   return (
-    <div className="m-t-60px">
-      <div className="all-project-body">
-        <div className="all-project__1st-row">
-          <div className="all-project__1st-row-1st-column">
-            <AllProjectImage image={image11} width={636} hight={320} title="Project 1" />
-          </div>
-          <div className="all-project__1st-row-2nd-column">
-            <AllProjectImage image={image12} width={636} hight={664} title="Project 2" />
-          </div>
-        </div>
-        <div className="all-project__2nd-row">
-          <AllProjectImage image={image13} width={1296} hight={400} title="Project 3" />
-        </div>
+    <div className="m-t-60px flex justify-center items-center min-h-screen">
+      {/* Container to center content */}
+      <div className="all-project-body flex flex-col justify-center items-center">
+        {/* Dynamic rendering of project details using AllProjectImage inside ProjectDetailsBody */}
+        <ProjectDetailsBody />
       </div>
     </div>
   );
 };
 
 export default AllProjectBody;
+

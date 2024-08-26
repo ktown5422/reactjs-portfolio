@@ -21,31 +21,8 @@ const navbarData = [
     menuItems: [
       {
         id: "homeONe",
-        title: "Home One",
+        title: "Home",
         menuItemPath: "/home-page",
-      },
-      {
-        id: "homeTwo",
-        title: "Home Two",
-        menuItemPath: "/home-page",
-      },
-    ],
-  },
-  {
-    id: "menu2",
-    menuTitle: "Blog",
-    icon: <Blogger />,
-    path: "#",
-    menuItems: [
-      {
-        id: "all-blogs",
-        title: "Blogs",
-        menuItemPath: "/blogs",
-      },
-      {
-        id: "Blogs-details",
-        title: "Blog Details",
-        menuItemPath: "/blog-details",
       },
     ],
   },
@@ -60,20 +37,8 @@ const navbarData = [
         title: "All Project",
         menuItemPath: "/all-projects",
       },
-      {
-        id: "project-details",
-        title: "Project Details",
-        menuItemPath: "/project-details",
-      },
     ],
   },
-  {
-    id: "services-section",
-    menuTitle: "Services",
-    icon: <Briefcase />,
-    path: "/services",
-  },
-
   {
     id: "about-page",
     icon: <UserSquare />,
@@ -124,7 +89,7 @@ const MobileNavbar = ({
           }`}
       >
         <Link href={`/`} className="d-block logo-main-mobile">
-          Bento<span>X</span>
+          Kevin<span>Townson</span>
         </Link>
 
         <div className="sidebar-menu-container">

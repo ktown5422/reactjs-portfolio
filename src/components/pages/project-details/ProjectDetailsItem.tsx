@@ -1,20 +1,23 @@
+// ProjectDetailsItem.tsx
 "use client";
 import { motion } from "framer-motion";
 import Image, { StaticImageData } from "next/image";
 
+type Props = {
+  title: string;
+  image: StaticImageData;
+  description: string;
+  listContent: string[];
+  flexDirection?: string;
+};
+
 const ProjectDetailsItem = ({
   title,
   image,
-  text,
+  description,
   listContent,
-  flexDirection,
-}: {
-  title: string;
-  image: StaticImageData;
-  text: string;
-  listContent: string[];
-  flexDirection?: string;
-}) => {
+  flexDirection = "",
+}: Props) => {
   return (
     <div className={`project-details__item ${flexDirection}`}>
       <motion.div
@@ -28,7 +31,7 @@ const ProjectDetailsItem = ({
           src={image}
           width={604}
           height={360}
-          alt="Image one"
+          alt={title}
           className="img-fluid project-details__item-image"
         />
       </motion.div>
@@ -40,9 +43,9 @@ const ProjectDetailsItem = ({
         className="project-details__item-content"
       >
         <h5 className="heading-3">{title}</h5>
-        <p className="textL project-details__item-content-text">{text}</p>
+        <p className="textL project-details__item-content-text">{description}</p>
         <ol>
-          {listContent?.map((item) => (
+          {listContent.map((item) => (
             <li key={item}>{item}</li>
           ))}
         </ol>
@@ -52,3 +55,4 @@ const ProjectDetailsItem = ({
 };
 
 export default ProjectDetailsItem;
+
