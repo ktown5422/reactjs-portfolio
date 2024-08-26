@@ -60,7 +60,7 @@ const LandingTwoBody = () => {
             </div>
           </div>
           <div className="second-down-section">
-            <LandingTwoAllService />
+            {/* <LandingTwoAllService /> */}
             <LandingTwoGetInTouch />
           </div>
         </div>

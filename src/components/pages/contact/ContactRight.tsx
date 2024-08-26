@@ -15,11 +15,11 @@ const ContactRight = () => {
       // follow there documentation get "YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID",  "YOUR_PUBLIC_KEY"
       // in "YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID",  "YOUR_PUBLIC_KEY"  replace it with actual contents
       .sendForm(
-        "YOUR_SERVICE_ID",
-        "YOUR_TEMPLATE_ID",
+        "service_els7p38",
+        "template_pdvgghp",
         // @ts-ignore
         form?.current,
-        "YOUR_PUBLIC_KEY"
+        "raCqOP3CvCX58UAST",
       )
       .then(
         (result) => {
