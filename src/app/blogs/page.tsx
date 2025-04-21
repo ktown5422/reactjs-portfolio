@@ -7,8 +7,8 @@ import Navbar from "@/components/shared/Navbar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Blogs - Grid System Unique Portfolio NextJs Template",
-  description: "NextJs Template",
+  title: "Blogs",
+  description: " ",
 };
 
 const Blog = () => {

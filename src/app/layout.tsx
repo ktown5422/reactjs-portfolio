@@ -10,8 +10,8 @@ import "swiper/css/navigation";
 import "../styles/main.scss";
 
 export const metadata: Metadata = {
-  title: "BentoX - Grid System Unique Portfolio NextJs Template",
-  description: "NextJs Template",
+  title: "",
+  description: "",
 };
 
 export default function RootLayout({
