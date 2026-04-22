@@ -7,17 +7,27 @@ const AllProjectsTwo = () => {
   return (
     <div className="card-style-two all-projects-card-two p-32px">
       <div className="all-projects-card-two__title-text">
-        <p className="heading-4">See My Latest Works</p>
+        <span className="all-projects-card-two__eyebrow textS">
+          Featured build
+        </span>
+        <p className="heading-4">Cyber Bar security dashboard</p>
       </div>
 
-      <Image
-        src={allProjectImage}
-        width={294}
-        height={168}
-        style={{ objectFit: "cover" }}
-        alt="All Project Image"
-        className="all-projects-card-two__image"
-      />
+      <div className="all-projects-card-two__image-wrap">
+        <Image
+          src={allProjectImage}
+          width={294}
+          height={168}
+          style={{ objectFit: "cover" }}
+          alt="Cyber Bar dashboard preview"
+          className="all-projects-card-two__image"
+        />
+        <div className="all-projects-card-two__project-tags">
+          <span>Next.js</span>
+          <span>UX</span>
+          <span>Cloud</span>
+        </div>
+      </div>
       <LinkPrimaryTwo
         linkText="All Projects"
         link="/all-projects"

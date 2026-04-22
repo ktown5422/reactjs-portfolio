@@ -4,6 +4,7 @@ import {
   Blogger,
   Briefcase,
   CallAdd,
+  Code,
   Home2,
   UserSquare,
 } from "iconsax-react";
@@ -50,6 +51,12 @@ const navbarData = [
     icon: <CallAdd />,
     menuTitle: "Contact",
     path: "/contact",
+  },
+  {
+    id: "github-page",
+    icon: <Code />,
+    menuTitle: "GitHub",
+    path: "https://github.com/ktown5422",
   },
 ];
 
@@ -152,6 +159,8 @@ const MobileNavbar = ({
                   <Link
                     onClick={() => setSidebarToggle(false)}
                     href={`${path}`}
+                    target={path.startsWith("http") ? "_blank" : undefined}
+                    rel={path.startsWith("http") ? "noreferrer" : undefined}
                     className="d-flex align-items-center justify-content-between mobile-single-menu"
                   >
                     {" "}

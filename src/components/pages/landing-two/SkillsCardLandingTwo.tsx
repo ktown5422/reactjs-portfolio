@@ -3,15 +3,16 @@ import { IconBrandWebflow } from "@tabler/icons-react";
 import { Code, Figma, Framer, Html5, Illustrator, JavaScript, Photoshop, Python, Xd } from "iconsax-react";
 
 const SkillsCardLandingTwo = [
-  "Javascript",
+  "JavaScript",
+  "TypeScript",
   "Python",
-  "HTML/CSS",
-  "Node.js",
-  "React.js",
+  "React",
+  "Next.js",
+  "Node",
   "Redux",
   "React Native",
-  "Next.js",
   "Google Cloud",
+  "API Integrations",
 ];
 
 export const sliderTwo = [
@@ -42,7 +43,10 @@ const SkillsCardTwo = () => {
             <ul className="marqee-list d-flex">
               <li className="marquee-item">
                 {SkillsCardLandingTwo.map((item) => (
-                  <span key={item} className="skills-card__slider-text">
+                  <span
+                    key={item}
+                    className="skills-card-landing-two__slider-text"
+                  >
                     {item}
                   </span>
                 ))}
@@ -58,7 +62,7 @@ const SkillsCardTwo = () => {
                 {sliderTwo.map(({ icon }, index) => (
                   <span
                     key={`skill-slider-two${index}`}
-                    className="skills-card__slider-two__box"
+                    className="skills-card-landing-two__slider-two__box"
                   >
                     {icon}
                   </span>

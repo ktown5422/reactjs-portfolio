@@ -50,16 +50,12 @@
 }
 
 .header-title {
-  border-radius: 16px;
-  border: 1px solid var(--black-neutral3);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   text-align: center;
-  background: linear-gradient(
-    153deg,
-    rgba(255, 255, 255, 0.12) -65.62%,
-    rgba(255, 255, 255, 0.04) 83.28%
-  );
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.035));
   color: var(--white-neutral1);
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(28px) saturate(135%);
   padding: 20px;
 }
 
@@ -70,15 +66,28 @@
 }
 .card-style {
   position: relative;
-  border-radius: 16px;
-  border: 1px solid var(--accent2);
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
   height: 100%;
-  background: linear-gradient(
-    153deg,
-    rgba(255, 255, 255, 0.12) -65.62%,
-    rgba(255, 255, 255, 0.04) 83.28%
-  );
-  backdrop-filter: blur(25px);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.035)),
+    rgba(12, 17, 23, 0.72);
+  backdrop-filter: blur(28px) saturate(135%);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.1),
+    0 24px 70px rgba(0, 0, 0, 0.18);
+  transition:
+    transform 0.35s ease,
+    border-color 0.35s ease,
+    box-shadow 0.35s ease;
+}
+
+.card-style:hover {
+  border-color: rgba(18, 214, 177, 0.36);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.14),
+    0 28px 80px rgba(0, 0, 0, 0.24);
+  transform: translateY(-2px);
 }
 
 @keyframes rotate {
@@ -91,9 +100,11 @@
 }
 
 [data-theme="light"] .card-style {
-  border: 1px solid rgba(179, 182, 185, 0.2);
-  background: #fff;
-  box-shadow: 0px 6px 30px 0px rgba(0, 0, 0, 0.04);
+  border: 1px solid rgba(16, 19, 24, 0.08);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.96), rgba(245, 247, 249, 0.86)),
+    #fff;
+  box-shadow: 0 18px 55px rgba(16, 19, 24, 0.08);
 }
 
 // bio card

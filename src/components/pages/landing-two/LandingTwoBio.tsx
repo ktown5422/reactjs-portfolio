@@ -7,6 +7,8 @@ import { Send2 } from "iconsax-react";
 import Image from "next/image";
 import Link from "next/link";
 
+const focusAreas = ["Product UI", "API design", "Automation"];
+
 const LandingTwoBio = () => {
   return (
     <motion.div
@@ -44,8 +46,15 @@ const LandingTwoBio = () => {
           I’m Kevin Townson
         </Link>
         <p className="biography-style__text textL">
-          I have a strong enthusiasm for technology and enjoy collaborating with innovative thinkers to develop effective and captivating software.
+          I design and build software that feels useful on day one, from
+          customer-facing React apps to backend workflows that keep products
+          moving.
         </p>
+        <div className="biography-style__focus-list">
+          {focusAreas.map((area) => (
+            <span key={area}>{area}</span>
+          ))}
+        </div>
       </div>
       <LinkPrimaryTwo
         linkText="Biography"

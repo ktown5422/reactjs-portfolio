@@ -7,8 +7,9 @@ import Snowfall from "@/components/shared/Snowfall";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Home",
-  description: "Home Page",
+  title: "Kevin Townson | Software Engineer",
+  description:
+    "Portfolio of Kevin Townson, a software engineer building polished web apps, cloud-backed products, and useful digital experiences.",
 };
 
 const page = () => {

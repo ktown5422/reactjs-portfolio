@@ -1,8 +1,9 @@
 "use client";
 import imageShape from "@/../public/image/landing-two-profile-shapepng.png";
 import { motion } from "framer-motion";
-import Image, { StaticImageData } from "next/image";
-import image from "@/../public/image/mePicimg2.jpg";
+import Image from "next/image";
+
+const githubProfileImage = "https://github.com/ktown5422.png";
 
 const AboutCardProfile = () => {
   return (
@@ -15,11 +16,11 @@ const AboutCardProfile = () => {
     >
       <div className="card-profile-image__image-container">
         <Image
-          src={image}
+          src={githubProfileImage}
           width={260}
           height={260}
           style={{ objectFit: "cover" }}
-          alt="Landing bio image"
+          alt="Kevin Townson GitHub profile"
           className="profile-image"
         />
         <Image

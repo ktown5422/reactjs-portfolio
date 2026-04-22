@@ -25,6 +25,11 @@ export const navbarData = [
     menuTitle: "Contact",
     path: "/contact",
   },
+  {
+    id: "github-page",
+    menuTitle: "GitHub",
+    path: "https://github.com/ktown5422",
+  },
 ];
 
 const DesktopNavbar = () => {
@@ -42,6 +47,8 @@ const DesktopNavbar = () => {
             <li key={id} className={`menu-item `}>
               <Link
                 href={`${path}`}
+                target={path.startsWith("http") ? "_blank" : undefined}
+                rel={path.startsWith("http") ? "noreferrer" : undefined}
                 className={`textL font-medium navbar-hover-text  ${pathName === path ? "text-secondary" : "menu-item-text-white"
                   }`}
               >

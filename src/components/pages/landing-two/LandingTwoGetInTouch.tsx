@@ -13,7 +13,10 @@ const LandingTwoGetInTouch = () => {
       transition={{ duration: 0.9 }}
       className="get-in-touch card-style-two p-32px"
     >
-      <p className="heading-4">Let’s Works Together </p>
+      <div>
+        <span className="get-in-touch__eyebrow textS">Next collaboration</span>
+        <p className="heading-4">Let’s build something clean, useful, and fast.</p>
+      </div>
       <LinkPrimaryTwo link="/contact" linkText="Get In Touch" />
       <Image
         src={image}

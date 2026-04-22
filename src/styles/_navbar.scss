@@ -7,15 +7,13 @@
   justify-content: space-between;
   align-items: center;
 
-  border-radius: 16px;
-  border: 1px solid var(--black-neutral3);
-  background: linear-gradient(
-    153deg,
-    rgba(255, 255, 255, 0.12) -65.62%,
-    rgba(255, 255, 255, 0.04) 83.28%
-  );
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.035)),
+    rgba(12, 17, 23, 0.72);
 
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(28px) saturate(135%);
   padding: 16px 24px;
 
   @media (max-width: 1200px) {
@@ -185,15 +183,13 @@
 
 // mobile navbar
 .mobile-navbar-container {
-  border-radius: 16px;
-  border: 1px solid var(--black-neutral3);
-  background: linear-gradient(
-    153deg,
-    rgba(255, 255, 255, 0.12) -65.62%,
-    rgba(255, 255, 255, 0.04) 83.28%
-  );
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.13), rgba(255, 255, 255, 0.035)),
+    rgba(12, 17, 23, 0.72);
   color: var(--white-neutral1);
-  backdrop-filter: blur(25px);
+  backdrop-filter: blur(28px) saturate(135%);
   padding: 10px;
   display: flex;
   align-items: center;

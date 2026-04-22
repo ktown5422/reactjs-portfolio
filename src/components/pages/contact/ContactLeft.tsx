@@ -45,7 +45,7 @@ const ContactLeft = () => {
           <div className="contact-info__card-info">
             <p className="textLead">Email</p>
             <Link
-              href="mailto:tanya.hill@example.com"
+              href="mailto:ktown5422@gmail.com"
               className="textM font-thin link"
             >
               ktown5422@gmail.com
