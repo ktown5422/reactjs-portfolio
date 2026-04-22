@@ -5,11 +5,11 @@ import EllipseShapeLandingTwoBottomRight from "@/components/pages/landing-two/El
 import LinkBackHome from "@/components/shared/LinkBackHome";
 import Navbar from "@/components/shared/Navbar";
 import { Metadata } from "next";
-import aboutOne from "@/../public/image/about-1.png"
 
 export const metadata: Metadata = {
   title: "About",
-  description: "About Page",
+  description:
+    "About Kevin Townson, a software engineer focused on React, Next.js, full-stack product builds, and practical user interfaces.",
 };
 
 const AboutUs = () => {

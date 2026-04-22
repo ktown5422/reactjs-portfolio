@@ -1,9 +1,8 @@
 "use client";
-import LinkPrimaryTwo from "@/components/shared/LinkPrimaryTwo";
-import { motion } from "framer-motion";
-import { Be, Instagram } from "iconsax-react";
-import ProfileIcon from "../landing-one/ProfileIcon";
 import { IconBrandLinkedin } from "@tabler/icons-react";
+import { motion } from "framer-motion";
+import { Instagram } from "iconsax-react";
+import ProfileIcon from "../landing-one/ProfileIcon";
 
 const ProfileCardAbout = () => {
   return (

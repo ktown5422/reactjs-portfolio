@@ -8,7 +8,8 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Page",
+  description:
+    "Contact Kevin Townson for React, Next.js, full-stack software roles, freelance product builds, and collaboration opportunities.",
 };
 
 const Contact = () => {

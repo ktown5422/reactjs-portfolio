@@ -7,9 +7,9 @@ import Navbar from "@/components/shared/Navbar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Projects | Kevin Townson",
+  title: "Projects",
   description:
-    "Selected GitHub projects by Kevin Townson, including CodeStreak and a modern Real Estate App.",
+    "Selected GitHub projects by Kevin Townson, including CodeStreak and the NestFind Real Estate App.",
 };
 
 const AllProjects = () => {

@@ -1292,6 +1292,62 @@
   }
 }
 
+.home-quick-scan-2026 {
+  display: grid;
+  gap: 18px;
+}
+
+.home-quick-scan-2026__grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+
+  @media (max-width: 1200px) {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  @media (max-width: 576px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+.home-quick-scan-card {
+  min-height: 190px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 16px;
+  padding: 24px;
+
+  &__icon {
+    width: 48px;
+    height: 48px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid rgba(18, 214, 177, 0.3);
+    border-radius: 8px;
+    color: var(--primary-color);
+    background: rgba(18, 214, 177, 0.09);
+  }
+
+  &__label {
+    color: var(--white-neutral3);
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 0;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  strong {
+    color: var(--white-neutral1);
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 1.25;
+  }
+}
+
 .home-capability-card {
   display: grid;
   gap: 16px;
@@ -1381,6 +1437,7 @@
 [data-theme="light"] .home-project-card__stack span,
 [data-theme="light"] .home-project-card__links a,
 [data-theme="light"] .home-recruiter-2026__skills span,
+[data-theme="light"] .home-quick-scan-card__icon,
 [data-theme="light"] .home-hero-2026__proof-list span {
   border-color: rgba(16, 19, 24, 0.09);
   background: rgba(16, 19, 24, 0.035);

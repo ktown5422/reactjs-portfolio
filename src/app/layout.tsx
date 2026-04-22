@@ -10,8 +10,12 @@ import "swiper/css/navigation";
 import "../styles/main.scss";
 
 export const metadata: Metadata = {
-  title: "",
-  description: "",
+  title: {
+    default: "Kevin Townson | Software Engineer",
+    template: "%s | Kevin Townson",
+  },
+  description:
+    "Portfolio of Kevin Townson, a React and Next.js software engineer building polished full-stack web apps.",
 };
 
 export default function RootLayout({

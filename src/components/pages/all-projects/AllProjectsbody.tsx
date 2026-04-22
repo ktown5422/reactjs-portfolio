@@ -16,6 +16,7 @@ type Project = {
   outcome: string;
   stack: string[];
   proof: string[];
+  features: string[];
   link: string;
   linkLabel: string;
   linkType: "Live" | "Repo";
@@ -39,7 +40,8 @@ const projects: Project[] = [
       "Live deployed app with GitHub-backed positioning",
       "Clear UX flow for repeat engagement",
     ],
-    link: "https://code-commit-club.vercel.app/",
+    features: ["Developer accountability", "Community positioning", "Repeat-use UX"],
+    link: "https://codestreakapp.vercel.app/",
     caseStudyLink: "/project-details",
     repoLink: "https://github.com/ktown5422/code-commit-club",
     linkLabel: "View live site",
@@ -47,7 +49,7 @@ const projects: Project[] = [
     featured: true,
   },
   {
-    title: "Real Estate App",
+    title: "NestFind Real Estate App",
     category: "Marketplace platform",
     year: "2026",
     image: realEstateImage,
@@ -60,7 +62,9 @@ const projects: Project[] = [
       "Searchable marketplace-style UI",
       "Cloud-ready deployment and data flow",
     ],
-    link: "https://real-estate-app-inky-two.vercel.app/",
+    features: ["Auth flows", "Property search", "Database-backed listings"],
+    link: "https://nestfindapp.vercel.app/",
+    caseStudyLink: "/project-details/nestfind",
     repoLink: "https://github.com/ktown5422/real-estate-app",
     linkLabel: "View live site",
     linkType: "Live",
@@ -97,7 +101,7 @@ const AllProjectBody = () => {
           </h1>
           <p className="textL all-projects-hero__text">
             A tighter look at the two projects I want hiring teams and
-            collaborators to notice first: CodeStreak and Real Estate App.
+            collaborators to notice first: CodeStreak and NestFind Real Estate App.
           </p>
         </motion.div>
 
@@ -154,6 +158,14 @@ const AllProjectBody = () => {
                 <li key={item}>{item}</li>
               ))}
             </ul>
+          </div>
+          <div className="featured-project__features">
+            <span className="featured-project__proof-title">Feature focus</span>
+            <div>
+              {featuredProject.features.map((item) => (
+                <span key={item}>{item}</span>
+              ))}
+            </div>
           </div>
           <Link className="featured-project__link" href={featuredProject.link}>
             <span>{featuredProject.linkLabel}</span>
@@ -215,6 +227,14 @@ const AllProjectBody = () => {
                     <li key={item}>{item}</li>
                   ))}
                 </ul>
+              </div>
+              <div className="project-card__features">
+                <span>Feature focus</span>
+                <div>
+                  {project.features.map((item) => (
+                    <strong key={item}>{item}</strong>
+                  ))}
+                </div>
               </div>
               <Link href={project.link} className="project-card__link">
                 {project.linkType === "Repo" ? (

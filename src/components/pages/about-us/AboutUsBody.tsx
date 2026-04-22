@@ -1,4 +1,3 @@
-import { StaticImageData } from "next/image";
 import AboutCardProfile from "./AboutCardProfile";
 import AboutEducation from "./AboutEducation";
 import AboutLetsWorks from "./AboutLetsWorks";

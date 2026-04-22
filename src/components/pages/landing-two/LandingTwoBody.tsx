@@ -7,9 +7,13 @@ import {
   IconBrandGithub,
   IconBrandLinkedin,
   IconBrandYoutube,
+  IconBriefcase2,
+  IconCalendarCheck,
   IconCloudCode,
   IconCode,
   IconDeviceDesktopAnalytics,
+  IconFileText,
+  IconMapPin,
   IconMail,
   IconSparkles,
   IconUserCheck,
@@ -27,19 +31,20 @@ const featuredProjects = [
     description:
       "A community project for helping developers stay consistent, share momentum, and turn regular commits into a visible habit.",
     stack: ["React", "Next.js", "GitHub", "Community UX"],
-    liveLink: "https://code-commit-club.vercel.app/",
+    liveLink: "https://codestreakapp.vercel.app/",
     repoLink: "https://github.com/ktown5422/code-commit-club",
     caseStudyLink: "/project-details",
   },
   {
-    title: "Real Estate App",
+    title: "NestFind Real Estate App",
     type: "Marketplace app",
     image: realEstateImage,
     description:
       "A modern property discovery app with authenticated flows, searchable listings, and a polished responsive interface.",
     stack: ["Next.js", "Clerk", "Supabase", "GCP", "Tailwind"],
-    liveLink: "https://real-estate-app-inky-two.vercel.app/",
+    liveLink: "https://nestfindapp.vercel.app/",
     repoLink: "https://github.com/ktown5422/real-estate-app",
+    caseStudyLink: "/project-details/nestfind",
   },
 ];
 
@@ -86,6 +91,29 @@ const coreSkills = [
   "Redux",
   "REST APIs",
   "Responsive UI",
+];
+
+const recruiterQuickScan = [
+  {
+    icon: <IconBriefcase2 size={22} />,
+    label: "Target roles",
+    value: "Frontend Engineer / React Developer / Full-stack Junior",
+  },
+  {
+    icon: <IconMapPin size={22} />,
+    label: "Location",
+    value: "Houston, Texas / Remote-friendly",
+  },
+  {
+    icon: <IconCalendarCheck size={22} />,
+    label: "Availability",
+    value: "Open to software roles and product builds",
+  },
+  {
+    icon: <IconFileText size={22} />,
+    label: "Resume",
+    value: "Available on request by email",
+  },
 ];
 
 const githubProfileImage = "https://github.com/ktown5422.png";
@@ -255,6 +283,29 @@ const LandingTwoBody = () => {
         <div className="home-recruiter-2026__skills" aria-label="Core skills">
           {coreSkills.map((skill) => (
             <span key={skill}>{skill}</span>
+          ))}
+        </div>
+      </section>
+
+      <section className="home-quick-scan-2026" aria-label="Recruiter quick scan">
+        <div className="home-section-heading">
+          <span className="textS">Quick scan</span>
+          <h2 className="heading-2">The hiring details without the digging.</h2>
+        </div>
+        <div className="home-quick-scan-2026__grid">
+          {recruiterQuickScan.map((item, index) => (
+            <motion.article
+              initial={{ opacity: 0, y: 18 }}
+              whileInView={{ opacity: 1, y: 0 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.38, delay: index * 0.04 }}
+              className="home-quick-scan-card card-style-two"
+              key={item.label}
+            >
+              <span className="home-quick-scan-card__icon">{item.icon}</span>
+              <span className="home-quick-scan-card__label">{item.label}</span>
+              <strong>{item.value}</strong>
+            </motion.article>
           ))}
         </div>
       </section>

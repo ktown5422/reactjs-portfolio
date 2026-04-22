@@ -8,7 +8,7 @@ export const navbarData = [
   {
     id: "home",
     menuTitle: "Home",
-    path: "/home-page",
+    path: "/",
   },
   {
     id: "about-page",
@@ -37,7 +37,7 @@ const DesktopNavbar = () => {
   return (
     <div className="desktop-navbar-container">
       <div>
-        <Link href={`/home-page`} className="logo-main">
+        <Link href={`/`} className="logo-main">
           Kevin Townson
         </Link>
       </div>

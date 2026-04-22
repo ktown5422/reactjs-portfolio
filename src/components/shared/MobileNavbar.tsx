@@ -1,7 +1,6 @@
 "use client";
 import {
   ArrowDown2,
-  Blogger,
   Briefcase,
   CallAdd,
   Code,
@@ -23,7 +22,7 @@ const navbarData = [
       {
         id: "homeONe",
         title: "Home",
-        menuItemPath: "/home-page",
+        menuItemPath: "/",
       },
     ],
   },

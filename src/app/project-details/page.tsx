@@ -7,7 +7,7 @@ import Navbar from "@/components/shared/Navbar";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "CodeStreak Case Study | Kevin Townson",
+  title: "CodeStreak Case Study",
   description:
     "A developer community project case study by Kevin Townson focused on GitHub commits, consistency, accountability, and modern product UX.",
 };
