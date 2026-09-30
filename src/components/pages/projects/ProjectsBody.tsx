@@ -1,5 +1,6 @@
 "use client";
 
+import InfrastructureLabs from "@/components/shared/InfrastructureLabs";
 import codeCommitImage from "@/../public/image/CodeStreak-app-pic.png";
 import realEstateImage from "@/../public/image/NestFind-real-state-app-pic.png";
 import {
@@ -85,9 +86,9 @@ const supportingProjects = projects.filter(
 );
 
 const pageStats = [
-  { value: "02", label: "github projects" },
-  { value: "08", label: "core tools" },
-  { value: "100%", label: "portfolio focus" },
+  { value: "02", label: "infrastructure labs" },
+  { value: "02", label: "web applications" },
+  { value: "GitHub", label: "source & documentation" },
 ];
 
 const eyebrow =
@@ -151,13 +152,11 @@ const ProjectsBody = () => {
         <motion.div {...fadeUp()}>
           <span className={eyebrow}>Selected work</span>
           <h1 className="mt-4 font-display text-4xl font-bold leading-tight tracking-tight sm:text-5xl">
-            GitHub-backed projects with clean interfaces and practical
-            engineering.
+            Hands-on infrastructure labs and software projects.
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-muted">
-            A tighter look at the two projects I want hiring teams and
-            collaborators to notice first: CodeStreak and NestFind Real Estate
-            App.
+            Personal labs exploring monitoring, cloud costs, and troubleshooting,
+            alongside the web applications that reflect my software foundation.
           </p>
         </motion.div>
         <motion.div
@@ -177,10 +176,22 @@ const ProjectsBody = () => {
         </motion.div>
       </section>
 
+      <InfrastructureLabs showLearningAreas />
+
+      <div className="mt-24">
+        <span className={eyebrow}>Application development</span>
+        <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
+          Software Projects
+        </h2>
+        <p className="mt-4 max-w-3xl text-muted">
+          Web applications that reflect my foundation in software engineering.
+        </p>
+      </div>
+
       {/* Featured project */}
       <motion.section
         {...fadeUp(0.1)}
-        className="mt-16 grid overflow-hidden rounded-4xl border border-ink/10 bg-card lg:grid-cols-2"
+        className="mt-8 grid overflow-hidden rounded-4xl border border-ink/10 bg-card lg:grid-cols-2"
       >
         <div className="relative min-h-[16rem]">
           <Image
@@ -193,7 +204,7 @@ const ProjectsBody = () => {
           />
         </div>
         <div className="flex flex-col gap-4 p-8 sm:p-10">
-          <span className={eyebrow}>Featured project</span>
+          <span className={eyebrow}>Software project</span>
           <div>
             <p className="text-xs font-semibold uppercase tracking-wider text-muted">
               {featuredProject.category} / {featuredProject.year}

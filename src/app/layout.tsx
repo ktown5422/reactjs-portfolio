@@ -11,7 +11,7 @@ export const metadata: Metadata = {
     template: "%s | Kevin Townson",
   },
   description:
-    "Portfolio of Kevin Townson, a React and Next.js software engineer building polished full-stack web apps.",
+    "Kevin Townson: Houston-based software engineer expanding into cloud infrastructure, Linux, networking, and data center technology through hands-on labs.",
 };
 
 export default function RootLayout({

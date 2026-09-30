@@ -6,7 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "About Kevin Townson, a software engineer focused on React, Next.js, full-stack product builds, and practical user interfaces.",
+    "Meet Kevin Townson: a software engineer with World Wide Technology experience, a Google IT Support certificate, and a growing focus on cloud and infrastructure.",
 };
 
 const AboutUs = () => {

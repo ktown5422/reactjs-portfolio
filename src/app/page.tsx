@@ -4,10 +4,10 @@ import { Metadata } from "next";
 
 export const metadata: Metadata = {
   title: {
-    absolute: "Kevin Townson | Software Engineer",
+    absolute: "Kevin Townson | Software, Cloud & Infrastructure",
   },
   description:
-    "Portfolio of Kevin Townson, a software engineer building polished web apps, cloud-backed products, and useful digital experiences.",
+    "Houston-based software engineer expanding into cloud infrastructure and data center technology. Explore hands-on Azure and Linux labs, professional experience, and software projects.",
 };
 
 const page = () => {

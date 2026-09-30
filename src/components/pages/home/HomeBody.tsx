@@ -1,5 +1,6 @@
 "use client";
 
+import InfrastructureLabs from "@/components/shared/InfrastructureLabs";
 import codeCommitImage from "@/../public/image/CodeStreak-app-pic.png";
 import realEstateImage from "@/../public/image/NestFind-real-state-app-pic.png";
 import {
@@ -51,53 +52,43 @@ const featuredProjects = [
 const capabilities = [
   {
     icon: <IconCode size={24} />,
-    title: "Frontend systems",
-    text: "React and Next.js interfaces with component structure, responsive behavior, and clean interaction states.",
+    title: "Software engineering",
+    text: "Professional experience with production web and mobile applications, APIs, debugging, and CI/CD workflows.",
   },
   {
     icon: <IconCloudCode size={24} />,
-    title: "Cloud-backed apps",
-    text: "Auth, databases, APIs, deployment, and the glue code that turns an interface into a usable product.",
+    title: "Cloud & infrastructure labs",
+    text: "Hands-on learning with Azure, Linux, networking, monitoring, and the systems that support applications.",
   },
   {
     icon: <IconDeviceDesktopAnalytics size={24} />,
-    title: "Product polish",
-    text: "Layout, hierarchy, copy, and visual rhythm that help projects feel intentional instead of template-built.",
+    title: "Troubleshooting & documentation",
+    text: "Investigating logs and metrics, testing fixes, and documenting what happened and why.",
   },
 ];
 
 const heroStats = [
-  { value: "02", label: "featured GitHub projects" },
+  { value: "02", label: "featured infrastructure labs" },
   { value: "3+", label: "years building software" },
-  { value: "2026", label: "portfolio refresh" },
+  { value: "IT", label: "Google IT Support certificate" },
 ];
 
 const recruiterSignals = [
-  "React / Next.js frontend engineering",
-  "Full-stack product builds with auth, data, and deployment",
-  "Readable GitHub projects with live demos",
+  "Professional software engineering background",
+  "Building hands-on cloud and infrastructure skills",
+  "Google IT Support Professional Certificate",
 ];
 
 const coreSkills = [
-  "React",
-  "Next.js",
-  "TypeScript",
-  "JavaScript",
-  "Supabase",
-  "Clerk",
-  "Google Cloud",
-  "Tailwind",
-  "MongoDB",
-  "Redux",
-  "REST APIs",
-  "Responsive UI",
+  "Microsoft Azure", "Linux / Ubuntu", "TCP/IP & DNS", "SSH", "Prometheus",
+  "Grafana", "Azure Monitor", "Terraform", "Bash", "Technical documentation",
 ];
 
 const recruiterQuickScan = [
   {
     icon: <IconBriefcase2 size={22} />,
     label: "Target roles",
-    value: "Frontend Engineer / React Developer / Full-stack Junior",
+    value: "Data Center / Infrastructure Support / Cloud Support",
   },
   {
     icon: <IconMapPin size={22} />,
@@ -107,7 +98,7 @@ const recruiterQuickScan = [
   {
     icon: <IconCalendarCheck size={22} />,
     label: "Availability",
-    value: "Open to software roles and product builds",
+    value: "Exploring infrastructure, IT, and cloud opportunities",
   },
   {
     icon: <IconFileText size={22} />,
@@ -157,22 +148,22 @@ const HomeBody = () => {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-            Available for software roles and product builds
+            Exploring infrastructure, IT, and cloud opportunities
           </span>
 
           <span className={`${eyebrow} mt-6 block`}>
-            Kevin Townson / React and Next.js Software Engineer
+            Kevin Townson / Software Engineer
           </span>
           <h1 className="mt-4 font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            I build full-stack web apps that feel{" "}
+            From software to{" "}
             <span className="bg-gradient-to-r from-accent to-ember bg-clip-text text-transparent">
-              sharp, useful, and ready to ship.
+              the systems behind it.
             </span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-muted">
-            I work across React, Next.js, cloud services, and product UI to
-            turn ideas into fast, practical software with a little bit of
-            taste.
+            I’m a Houston-based software engineer expanding into cloud
+            infrastructure, Linux, networking, and data center technology.
+            I build labs to understand how systems run, fail, and recover.
           </p>
 
           <ul
@@ -233,34 +224,36 @@ const HomeBody = () => {
         <motion.aside
           {...fadeUp}
           transition={{ duration: 0.55, delay: 0.08 }}
-          className="group relative overflow-hidden rounded-4xl border border-ink/10 bg-card"
+          className="group relative aspect-[4/3] overflow-hidden rounded-4xl border border-ink/10 bg-card lg:aspect-auto lg:min-h-[22rem]"
         >
           <Image
             src={githubProfileImage}
-            width={520}
-            height={640}
+            fill
+            sizes="(min-width: 1152px) 426px, (min-width: 1024px) 40vw, (min-width: 640px) calc(100vw - 48px), calc(100vw - 32px)"
             alt="Kevin Townson GitHub profile"
-            className="aspect-[4/3] w-full object-cover object-[50%_30%] transition duration-500 group-hover:scale-[1.02] lg:aspect-auto lg:h-full lg:min-h-[22rem]"
+            className="object-cover object-[50%_30%] transition-transform duration-500 group-hover:scale-[1.02]"
             priority
           />
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 pt-16">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white backdrop-blur">
               <IconSparkles size={15} className="text-accent" />
-              Product-minded engineer
+              Software • Cloud • Infrastructure
             </span>
             <p className="mt-3 text-sm text-white/85">
-              Focused on portfolio-grade interfaces, practical app
-              architecture, and software that reads clearly to real users.
+              Building on production application experience to learn the
+              hardware, operating systems, and networks underneath it.
             </p>
           </div>
         </motion.aside>
       </section>
 
+      <InfrastructureLabs />
+
       {/* Featured projects */}
       <section className="mt-24" aria-label="Featured projects">
         <SectionHeading
-          kicker="Selected work"
-          title="The projects I want people to notice first."
+          kicker="Software projects"
+          title="My foundation in application development."
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {featuredProjects.map((project, index) => (
@@ -342,12 +335,12 @@ const HomeBody = () => {
         <div>
           <span className={eyebrow}>Recruiter snapshot</span>
           <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            What I bring to a React or full-stack team.
+            What I’m learning through hands-on labs.
           </h2>
           <p className="mt-4 text-muted">
-            I am strongest where frontend craft meets practical product
-            engineering: building clear interfaces, wiring real data flows,
-            and deploying work people can actually try.
+            My software background gives me a foundation in debugging, APIs,
+            logs, and delivery workflows. I’m now developing practical
+            infrastructure skills through personal learning environments.
           </p>
         </div>
         <div

@@ -3,6 +3,7 @@
 import ReactCounterUp from "@/components/shared/ReactCounterUp";
 import {
   IconArrowUpRight,
+  IconBrandGithub,
   IconBrandInstagram,
   IconBrandLinkedin,
   IconChevronsRight,
@@ -29,17 +30,18 @@ const experience = [
 
 const whatIDo = [
   "Web Development",
-  "Mobile App Development",
-  "Test Driven Development",
+  "Infrastructure & Cloud Labs",
+  "Troubleshooting & Documentation",
 ];
 
 const numbers = [
   { value: 3, suffix: "+", label: "Years experience" },
   { value: 2, suffix: "", label: "Professional projects" },
-  { value: 3, suffix: "", label: "Personal projects" },
+  { value: 2, suffix: "", label: "Featured infrastructure labs" },
 ];
 
 const education = [
+  { year: "Professional certificate", title: "Google IT Support Professional Certificate", school: "Google" },
   {
     year: "2019",
     title: "LC101 Programming Course",
@@ -53,9 +55,10 @@ const education = [
 ];
 
 const socials = [
+  { label: "GitHub", href: "https://github.com/ktown5422", icon: <IconBrandGithub size={28} /> },
   {
     label: "LinkedIn",
-    href: "http://www.linkedin.com/in/kevin-townson",
+    href: "https://www.linkedin.com/in/kevin-townson",
     icon: <IconBrandLinkedin size={28} />,
   },
   {
@@ -92,11 +95,20 @@ const AboutBody = () => {
           </span>
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-          I build React and Next.js applications with polished interfaces,
-          practical data flows, and product decisions that make the software
-          easier to use. My strongest work sits between frontend craft and
-          full-stack execution.
+          I’m based in Houston, Texas, with professional experience building
+          and supporting production web and mobile applications. Today, I’m
+          expanding into cloud infrastructure, Linux, networking, monitoring,
+          IT operations, and data center technology.
         </p>
+      </motion.section>
+
+      <motion.section {...fadeUp(0.05)} className={`${card} p-8 sm:p-12 lg:col-span-12 lg:order-last`}>
+        <span className={cardTitle}>Building on my software background</span>
+        <h2 className="mt-3 font-display text-3xl font-bold tracking-tight">Understanding what runs beneath the application.</h2>
+        <p className="mt-4 text-muted">At World Wide Technology, I contributed to a cellular site survey platform and the Schnucks Rewards mobile application. My work involved React Native, JavaScript, TypeScript, Python, REST APIs, Google Cloud, Firebase, GitHub Actions, GitLab CI/CD, Sentry, and Git.</p>
+        <p className="mt-4 text-muted">That experience taught me to investigate production issues, work with logs and APIs, collaborate with technical teams, and document systems. I’m building on it through personal infrastructure labs, where I configure services, investigate failures, troubleshoot connectivity, and write down what I learn. These are learning environments, not professional cloud experience or production systems.</p>
+        <h3 className="mt-6 font-display text-xl font-semibold">Where I’m going</h3>
+        <p className="mt-3 text-muted">I’m exploring data center technician, infrastructure support, IT field services, network technician, cloud support, junior cloud engineer, and technical support opportunities. Long term, I want to understand the full stack: hardware, operating systems, networking, cloud infrastructure, and applications.</p>
       </motion.section>
 
       {/* Profile image */}
