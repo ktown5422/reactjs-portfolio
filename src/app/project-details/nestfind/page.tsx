@@ -1,9 +1,6 @@
-import RealEstateProjectDetailsBody from "@/components/pages/project-details/RealEstateProjectDetailsBody";
-import Footer from "@/components/pages/landing-one/Footer";
-import EllipseShapeLandingTwoBottomRight from "@/components/pages/landing-two/EllipseShapeLandingTwoBottomRight";
-import EllipseShapeLandingTwoTopLeft from "@/components/pages/landing-two/EllipseShapeLandingTwoTopLeft";
+import CaseStudyBody from "@/components/pages/project-details/CaseStudyBody";
 import LinkBackHome from "@/components/shared/LinkBackHome";
-import Navbar from "@/components/shared/Navbar";
+import PageShell from "@/components/shared/PageShell";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,16 +11,10 @@ export const metadata: Metadata = {
 
 const NestFindProjectDetails = () => {
   return (
-    <div className="position-relative overflow-hidden">
-      <div className="container">
-        <Navbar />
-        <LinkBackHome />
-        <RealEstateProjectDetailsBody />
-        <Footer />
-      </div>
-      <EllipseShapeLandingTwoTopLeft />
-      <EllipseShapeLandingTwoBottomRight />
-    </div>
+    <PageShell>
+      <LinkBackHome />
+      <CaseStudyBody study="nestfind" />
+    </PageShell>
   );
 };
 

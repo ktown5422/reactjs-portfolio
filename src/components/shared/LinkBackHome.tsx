@@ -3,9 +3,13 @@ import Link from "next/link";
 
 const LinkBackHome = () => {
   return (
-    <div className="m-t-60px z-2">
-      <Link href={`/home-page`} className=" button-back-to-home light-theme-white-text">
-        <IconArrowLeft /> <span>Back To Home</span>
+    <div className="mt-10">
+      <Link
+        href="/"
+        className="inline-flex items-center gap-2 rounded-full border border-ink/10 bg-card px-4 py-2 text-sm font-medium text-muted transition hover:border-accent/50 hover:text-accent"
+      >
+        <IconArrowLeft size={18} />
+        <span>Back to home</span>
       </Link>
     </div>
   );

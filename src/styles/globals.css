@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Semantic color tokens as RGB triplets so Tailwind opacity modifiers work. */
+:root {
+  --c-canvas: 246 248 250;
+  --c-card: 255 255 255;
+  --c-raised: 238 242 246;
+  --c-ink: 11 18 32;
+  --c-muted: 91 107 127;
+  --c-accent: 13 155 130;
+  --c-ember: 226 84 50;
+}
+
+[data-theme="dark"] {
+  --c-canvas: 11 15 20;
+  --c-card: 19 26 34;
+  --c-raised: 27 36 48;
+  --c-ink: 241 245 249;
+  --c-muted: 148 163 184;
+  --c-accent: 24 214 178;
+  --c-ember: 255 122 90;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply bg-canvas font-sans text-ink antialiased;
+  }
+
+  ::selection {
+    @apply bg-accent/30 text-ink;
+  }
+}

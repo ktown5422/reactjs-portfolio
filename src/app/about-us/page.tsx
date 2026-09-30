@@ -1,9 +1,6 @@
-import AboutTopLeftElement from "@/components/pages/about-us/AboutTopLeftElement";
-import AboutUsBody from "@/components/pages/about-us/AboutUsBody";
-import Footer from "@/components/pages/landing-one/Footer";
-import EllipseShapeLandingTwoBottomRight from "@/components/pages/landing-two/EllipseShapeLandingTwoBottomRight";
+import AboutBody from "@/components/pages/about/AboutBody";
 import LinkBackHome from "@/components/shared/LinkBackHome";
-import Navbar from "@/components/shared/Navbar";
+import PageShell from "@/components/shared/PageShell";
 import { Metadata } from "next";
 
 export const metadata: Metadata = {
@@ -14,16 +11,10 @@ export const metadata: Metadata = {
 
 const AboutUs = () => {
   return (
-    <div className="position-relative overflow-hidden ">
-      <div className="container">
-        <Navbar />
-        <LinkBackHome />
-        <AboutUsBody />
-        <Footer />
-      </div>
-      <AboutTopLeftElement />
-      <EllipseShapeLandingTwoBottomRight />
-    </div>
+    <PageShell>
+      <LinkBackHome />
+      <AboutBody />
+    </PageShell>
   );
 };
 
