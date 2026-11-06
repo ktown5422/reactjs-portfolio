@@ -7,11 +7,11 @@ import "../styles/globals.css";
 
 export const metadata: Metadata = {
   title: {
-    default: "Kevin Townson | Software Engineer",
+    default: "Kevin Townson | Software Engineering to Data Center Operations",
     template: "%s | Kevin Townson",
   },
   description:
-    "Kevin Townson: Houston-based software engineer expanding into cloud infrastructure, Linux, networking, and data center technology through hands-on labs.",
+    "Kevin Townson is a Houston-based software engineer pursuing a Data Center Technician role and documenting hands-on Linux and networking labs.",
 };
 
 export default function RootLayout({

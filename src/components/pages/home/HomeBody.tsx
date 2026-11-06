@@ -1,6 +1,8 @@
 "use client";
 
-import InfrastructureLabs from "@/components/shared/InfrastructureLabs";
+import InfrastructureLabs, {
+  infrastructureLabCount,
+} from "@/components/shared/InfrastructureLabs";
 import codeCommitImage from "@/../public/image/CodeStreak-app-pic.png";
 import realEstateImage from "@/../public/image/NestFind-real-state-app-pic.png";
 import {
@@ -57,8 +59,8 @@ const capabilities = [
   },
   {
     icon: <IconCloudCode size={24} />,
-    title: "Cloud & infrastructure labs",
-    text: "Hands-on learning with Azure, Linux, networking, monitoring, and the systems that support applications.",
+    title: "Linux & network operations",
+    text: "Hands-on practice with Ubuntu Server, SSH, DNS, IPv4 routing, firewall rules, and system monitoring.",
   },
   {
     icon: <IconDeviceDesktopAnalytics size={24} />,
@@ -68,27 +70,27 @@ const capabilities = [
 ];
 
 const heroStats = [
-  { value: "02", label: "featured infrastructure labs" },
+  { value: String(infrastructureLabCount).padStart(2, "0"), label: "featured infrastructure labs" },
   { value: "3+", label: "years building software" },
   { value: "IT", label: "Google IT Support certificate" },
 ];
 
 const recruiterSignals = [
   "Professional software engineering background",
-  "Building hands-on cloud and infrastructure skills",
+  "Hands-on Linux, networking, and monitoring labs",
   "Google IT Support Professional Certificate",
 ];
 
 const coreSkills = [
-  "Microsoft Azure", "Linux / Ubuntu", "TCP/IP & DNS", "SSH", "Prometheus",
-  "Grafana", "Azure Monitor", "Terraform", "Bash", "Technical documentation",
+  "Linux / Ubuntu", "TCP/IP & DNS", "SSH", "UFW", "Wireshark",
+  "Prometheus", "Grafana", "Bash", "Microsoft Azure", "Technical documentation",
 ];
 
 const recruiterQuickScan = [
   {
     icon: <IconBriefcase2 size={22} />,
     label: "Target roles",
-    value: "Data Center / Infrastructure Support / Cloud Support",
+    value: "Data Center Technician / Infrastructure Support / Cloud Support",
   },
   {
     icon: <IconMapPin size={22} />,
@@ -98,7 +100,7 @@ const recruiterQuickScan = [
   {
     icon: <IconCalendarCheck size={22} />,
     label: "Availability",
-    value: "Exploring infrastructure, IT, and cloud opportunities",
+    value: "Open to data center and infrastructure opportunities",
   },
   {
     icon: <IconFileText size={22} />,
@@ -148,22 +150,23 @@ const HomeBody = () => {
               <span className="absolute inline-flex h-full w-full animate-ping rounded-full bg-accent opacity-75" />
               <span className="relative inline-flex h-2 w-2 rounded-full bg-accent" />
             </span>
-            Exploring infrastructure, IT, and cloud opportunities
+            Open to Data Center Technician roles
           </span>
 
           <span className={`${eyebrow} mt-6 block`}>
-            Kevin Townson / Software Engineer
+            Kevin Townson / Houston, Texas
           </span>
           <h1 className="mt-4 font-display text-4xl font-bold leading-[1.05] tracking-tight sm:text-5xl lg:text-6xl">
-            From software to{" "}
+            From software engineering to{" "}
             <span className="bg-gradient-to-r from-accent to-ember bg-clip-text text-transparent">
-              the systems behind it.
+              data center operations.
             </span>
           </h1>
           <p className="mt-5 max-w-xl text-lg text-muted">
-            I’m a Houston-based software engineer expanding into cloud
-            infrastructure, Linux, networking, and data center technology.
-            I build labs to understand how systems run, fail, and recover.
+            I’m a software engineer working toward a Data Center Technician role.
+            I bring experience debugging production applications and use hands-on
+            labs to build the Linux, networking, and troubleshooting skills that
+            keep services running.
           </p>
 
           <ul
@@ -183,13 +186,14 @@ const HomeBody = () => {
 
           <div className="mt-8 flex flex-wrap items-center gap-3">
             <Link
-              href="/all-projects"
+              href="#infrastructure-labs"
               className="inline-flex items-center gap-2 rounded-full bg-accent px-6 py-3 font-display text-sm font-semibold text-canvas transition hover:-translate-y-0.5 hover:shadow-lg hover:shadow-accent/25"
             >
-              View projects
+              View infrastructure labs
               <IconArrowUpRight size={18} />
             </Link>
             {[
+              { href: "/about-us", label: "About my transition" },
               { href: "https://github.com/ktown5422", label: "GitHub" },
               {
                 href: "mailto:ktown5422@gmail.com?subject=Resume%20request%20for%20Kevin%20Townson",
@@ -237,11 +241,11 @@ const HomeBody = () => {
           <div className="absolute inset-x-0 bottom-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent p-6 pt-16">
             <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-white backdrop-blur">
               <IconSparkles size={15} className="text-accent" />
-              Software • Cloud • Infrastructure
+              Software • Linux • Networking
             </span>
             <p className="mt-3 text-sm text-white/85">
-              Building on production application experience to learn the
-              hardware, operating systems, and networks underneath it.
+              Learning to trace problems from an application down to the
+              server, service, or network it depends on.
             </p>
           </div>
         </motion.aside>
@@ -333,14 +337,14 @@ const HomeBody = () => {
       {/* Recruiter snapshot */}
       <section className="mt-24 grid gap-10 rounded-4xl border border-ink/10 bg-card p-8 sm:p-12 lg:grid-cols-2">
         <div>
-          <span className={eyebrow}>Recruiter snapshot</span>
+          <span className={eyebrow}>Career transition</span>
           <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-            What I’m learning through hands-on labs.
+            How I troubleshoot across the stack.
           </h2>
           <p className="mt-4 text-muted">
-            My software background gives me a foundation in debugging, APIs,
-            logs, and delivery workflows. I’m now developing practical
-            infrastructure skills through personal learning environments.
+            When an application fails, I reproduce the issue, read the logs, and
+            verify the fix. I use the same process in my labs to check Linux
+            services, isolate DNS or routing problems, and confirm recovery.
           </p>
         </div>
         <div
@@ -419,9 +423,9 @@ const HomeBody = () => {
         />
         <div className="relative flex flex-col gap-8 lg:flex-row lg:items-center lg:justify-between">
           <div>
-            <span className={eyebrow}>Next collaboration</span>
+            <span className={eyebrow}>Career opportunities</span>
             <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">
-              Let&rsquo;s build something clean and useful.
+              Let&rsquo;s talk about your data center team.
             </h2>
           </div>
           <div className="flex flex-wrap items-center gap-3">

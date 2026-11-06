@@ -1,6 +1,7 @@
 "use client";
 
 import ReactCounterUp from "@/components/shared/ReactCounterUp";
+import { infrastructureLabCount } from "@/components/shared/InfrastructureLabs";
 import {
   IconArrowUpRight,
   IconBrandGithub,
@@ -29,15 +30,15 @@ const experience = [
 ];
 
 const whatIDo = [
-  "Web Development",
-  "Infrastructure & Cloud Labs",
-  "Troubleshooting & Documentation",
+  "Application development",
+  "Linux & network operations labs",
+  "Troubleshooting & documentation",
 ];
 
 const numbers = [
   { value: 3, suffix: "+", label: "Years experience" },
   { value: 2, suffix: "", label: "Professional projects" },
-  { value: 2, suffix: "", label: "Featured infrastructure labs" },
+  { value: infrastructureLabCount, suffix: "", label: "Featured infrastructure labs" },
 ];
 
 const education = [
@@ -89,26 +90,17 @@ const AboutBody = () => {
       >
         <span className={cardTitle}>About me</span>
         <h1 className="mt-4 font-display text-3xl font-bold leading-tight tracking-tight sm:text-5xl">
-          Hello, I&rsquo;m Kevin Townson, a{" "}
+          I&rsquo;m Kevin Townson, a software engineer moving into{" "}
           <span className="bg-gradient-to-r from-accent to-ember bg-clip-text text-transparent">
-            Software Engineer.
+            data center operations.
           </span>
         </h1>
         <p className="mt-5 max-w-2xl text-lg leading-relaxed text-muted">
-          I’m based in Houston, Texas, with professional experience building
-          and supporting production web and mobile applications. Today, I’m
-          expanding into cloud infrastructure, Linux, networking, monitoring,
-          IT operations, and data center technology.
+          I&rsquo;m based in Houston, Texas, and working toward a Data Center
+          Technician role. My background is in building and supporting production
+          applications. I&rsquo;m now learning to diagnose problems on the servers
+          and networks those applications depend on.
         </p>
-      </motion.section>
-
-      <motion.section {...fadeUp(0.05)} className={`${card} p-8 sm:p-12 lg:col-span-12 lg:order-last`}>
-        <span className={cardTitle}>Building on my software background</span>
-        <h2 className="mt-3 font-display text-3xl font-bold tracking-tight">Understanding what runs beneath the application.</h2>
-        <p className="mt-4 text-muted">At World Wide Technology, I contributed to a cellular site survey platform and the Schnucks Rewards mobile application. My work involved React Native, JavaScript, TypeScript, Python, REST APIs, Google Cloud, Firebase, GitHub Actions, GitLab CI/CD, Sentry, and Git.</p>
-        <p className="mt-4 text-muted">That experience taught me to investigate production issues, work with logs and APIs, collaborate with technical teams, and document systems. I’m building on it through personal infrastructure labs, where I configure services, investigate failures, troubleshoot connectivity, and write down what I learn. These are learning environments, not professional cloud experience or production systems.</p>
-        <h3 className="mt-6 font-display text-xl font-semibold">Where I’m going</h3>
-        <p className="mt-3 text-muted">I’m exploring data center technician, infrastructure support, IT field services, network technician, cloud support, junior cloud engineer, and technical support opportunities. Long term, I want to understand the full stack: hardware, operating systems, networking, cloud infrastructure, and applications.</p>
       </motion.section>
 
       {/* Profile image */}
@@ -124,6 +116,40 @@ const AboutBody = () => {
           className="aspect-[4/3] w-full object-cover object-[50%_30%] lg:aspect-auto lg:h-full"
           priority
         />
+      </motion.section>
+
+      <motion.section
+        {...fadeUp(0.08)}
+        className={`${card} p-8 sm:p-12 lg:col-span-12`}
+      >
+        <span className={cardTitle}>My career transition</span>
+        <h2 className="mt-3 font-display text-3xl font-bold tracking-tight">
+          From debugging applications to troubleshooting infrastructure.
+        </h2>
+        <p className="mt-4 max-w-3xl leading-relaxed text-muted">
+          At World Wide Technology, I contributed to a cellular site survey
+          platform and the Schnucks Rewards mobile app. Working with production
+          logs, APIs, and CI/CD taught me to narrow down where an issue started,
+          test a fix, and share what I found with the team.
+        </p>
+        <p className="mt-4 max-w-3xl leading-relaxed text-muted">
+          I apply that approach in two personal data center labs. My monitoring
+          lab covers Linux service health, alerting, and database recovery. My
+          network operations lab uses routed Ubuntu VMs to practice tracing
+          connectivity issues and documenting how services recover after
+          simulated failures.
+        </p>
+        <p className="mt-4 max-w-3xl leading-relaxed text-muted">
+          As a Data Center Technician, I want to build on those skills by working
+          directly with server hardware, network connectivity, and on-site
+          troubleshooting.
+        </p>
+        <Link
+          href="/all-projects#infrastructure-labs"
+          className="mt-6 inline-flex items-center gap-2 font-semibold text-accent hover:underline"
+        >
+          Explore my infrastructure labs <IconArrowUpRight size={18} aria-hidden="true" />
+        </Link>
       </motion.section>
 
       {/* Experience */}

@@ -1,4 +1,9 @@
-import { IconArrowUpRight, IconCloudCode, IconDeviceDesktopAnalytics } from "@tabler/icons-react";
+import {
+  IconArrowUpRight,
+  IconCloudCode,
+  IconDeviceDesktopAnalytics,
+  IconNetwork,
+} from "@tabler/icons-react";
 import Link from "next/link";
 
 const labs = [
@@ -6,9 +11,17 @@ const labs = [
     title: "Datacenter Monitoring Lab",
     href: "https://github.com/ktown5422/datacenter-monitoring-lab",
     icon: IconDeviceDesktopAnalytics,
-    description: "A personal environment for learning how Linux servers and services are monitored, how failures are investigated, and how backups support recovery.",
-    skills: ["Ubuntu", "Prometheus", "Grafana", "PostgreSQL", "Alerts", "Backups"],
-    practice: "Practicing metrics collection, service monitoring, log investigation, troubleshooting, and technical documentation.",
+    description: "An Ubuntu Server lab for monitoring CPU, memory, and disk usage with Prometheus, Node Exporter, and Grafana.",
+    skills: ["Ubuntu", "Prometheus", "Grafana", "PostgreSQL", "Bash", "Cron"],
+    practice: "The walkthrough covers testing alerts, investigating service failures with Linux logs, and verifying PostgreSQL backup and restore.",
+  },
+  {
+    title: "Datacenter Network Operations Lab",
+    href: "https://github.com/ktown5422/datacenter-network-operations-lab",
+    icon: IconNetwork,
+    description: "A three-VM Ubuntu lab in UTM with two private subnets connected by a Linux router.",
+    skills: ["IPv4 routing", "DNS & DHCP", "SSH", "UFW", "Wireshark", "iperf3"],
+    practice: "The walkthrough covers diagnosing simulated DNS, SSH, and routing failures, verifying recovery, and documenting incidents.",
   },
   {
     title: "Azure Cost Visibility Dashboard",
@@ -20,6 +33,8 @@ const labs = [
   },
 ];
 
+export const infrastructureLabCount = labs.length;
+
 const learningAreas = [
   { title: "Azure Networking Lab", text: "VNets, subnets, NSGs, IP addressing, DNS, SSH, and connectivity troubleshooting." },
   { title: "Azure Monitoring & Incident Response Lab", text: "Azure Monitor, Log Analytics, Action Groups, alerts, incident investigation, and runbooks." },
@@ -29,11 +44,11 @@ const learningAreas = [
 
 export default function InfrastructureLabs({ showLearningAreas = false }: { showLearningAreas?: boolean }) {
   return (
-    <section className="mt-24" aria-label="Infrastructure and cloud labs">
+    <section id="infrastructure-labs" className="mt-24 scroll-mt-24" aria-labelledby="infrastructure-labs-heading">
       <span className="font-display text-xs font-semibold uppercase tracking-[0.25em] text-accent">Hands-on learning</span>
-      <h2 className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">Infrastructure & cloud labs</h2>
-      <p className="mt-4 max-w-3xl text-muted">Personal learning environments where I configure systems, monitor services, troubleshoot failures, and document what I learn. These labs are not production systems or professional cloud experience.</p>
-      <div className="mt-8 grid gap-6 md:grid-cols-2">
+      <h2 id="infrastructure-labs-heading" className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">Infrastructure & cloud labs</h2>
+      <p className="mt-4 max-w-3xl text-muted">I use personal labs to practice the work behind a reliable service, from monitoring Linux hosts and tracing network failures to documenting recovery. My Azure lab explores how to track and investigate cloud spending.</p>
+      <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
         {labs.map(({ title, href, icon: Icon, description, skills, practice }) => (
           <article key={title} className="flex flex-col rounded-4xl border border-ink/10 bg-card p-7 sm:p-8">
             <Icon size={32} className="text-accent" aria-hidden="true" />

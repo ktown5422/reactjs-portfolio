@@ -6,7 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "About",
   description:
-    "Meet Kevin Townson: a software engineer with World Wide Technology experience, a Google IT Support certificate, and a growing focus on cloud and infrastructure.",
+    "Learn how Kevin Townson is applying his software engineering experience at World Wide Technology to a career in data center operations.",
 };
 
 const AboutUs = () => {

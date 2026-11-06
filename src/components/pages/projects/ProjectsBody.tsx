@@ -1,6 +1,8 @@
 "use client";
 
-import InfrastructureLabs from "@/components/shared/InfrastructureLabs";
+import InfrastructureLabs, {
+  infrastructureLabCount,
+} from "@/components/shared/InfrastructureLabs";
 import codeCommitImage from "@/../public/image/CodeStreak-app-pic.png";
 import realEstateImage from "@/../public/image/NestFind-real-state-app-pic.png";
 import {
@@ -86,7 +88,7 @@ const supportingProjects = projects.filter(
 );
 
 const pageStats = [
-  { value: "02", label: "infrastructure labs" },
+  { value: String(infrastructureLabCount).padStart(2, "0"), label: "infrastructure labs" },
   { value: "02", label: "web applications" },
   { value: "GitHub", label: "source & documentation" },
 ];
@@ -155,8 +157,9 @@ const ProjectsBody = () => {
             Hands-on infrastructure labs and software projects.
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-muted">
-            Personal labs exploring monitoring, cloud costs, and troubleshooting,
-            alongside the web applications that reflect my software foundation.
+            My data center labs document how I practice Linux monitoring,
+            network troubleshooting, and incident recovery. I also share my
+            Azure cost monitoring lab and the web apps I built as a developer.
           </p>
         </motion.div>
         <motion.div
