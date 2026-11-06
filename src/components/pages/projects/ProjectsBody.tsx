@@ -157,7 +157,7 @@ const ProjectsBody = () => {
             Hands-on infrastructure labs and software projects.
           </h1>
           <p className="mt-5 max-w-2xl text-lg text-muted">
-            My data center labs document how I practice Linux monitoring,
+            My labs document how I practice PC assembly, Linux monitoring,
             network troubleshooting, and incident recovery. I also share my
             Azure cost monitoring lab and the web apps I built as a developer.
           </p>

@@ -133,11 +133,12 @@ const AboutBody = () => {
           test a fix, and share what I found with the team.
         </p>
         <p className="mt-4 max-w-3xl leading-relaxed text-muted">
-          I apply that approach in two personal data center labs. My monitoring
+          I apply that approach in my personal labs. My monitoring
           lab covers Linux service health, alerting, and database recovery. My
           network operations lab uses routed Ubuntu VMs to practice tracing
           connectivity issues and documenting how services recover after
-          simulated failures.
+          simulated failures. My PC build lab covers assembling a system,
+          installing Windows 11, and checking that it works after setup.
         </p>
         <p className="mt-4 max-w-3xl leading-relaxed text-muted">
           As a Data Center Technician, I want to build on those skills by working

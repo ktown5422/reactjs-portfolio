@@ -6,7 +6,7 @@ import { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Explore Kevin Townson’s datacenter monitoring and network operations labs, Azure Cost Visibility Dashboard, and software projects CodeStreak and NestFind.",
+    "Explore Kevin Townson’s labs in PC assembly, datacenter monitoring, network operations, and Azure cost monitoring, alongside his software projects.",
 };
 
 const AllProjects = () => {

@@ -1,6 +1,7 @@
 import {
   IconArrowUpRight,
   IconCloudCode,
+  IconCpu,
   IconDeviceDesktopAnalytics,
   IconNetwork,
 } from "@tabler/icons-react";
@@ -22,6 +23,14 @@ const labs = [
     description: "A three-VM Ubuntu lab in UTM with two private subnets connected by a Linux router.",
     skills: ["IPv4 routing", "DNS & DHCP", "SSH", "UFW", "Wireshark", "iperf3"],
     practice: "The walkthrough covers diagnosing simulated DNS, SSH, and routing failures, verifying recovery, and documenting incidents.",
+  },
+  {
+    title: "PC Build & Deployment Lab",
+    href: "https://github.com/ktown5422/pc-hardware-deployment-lab",
+    icon: IconCpu,
+    description: "A hands-on lab covering PC assembly, hardware configuration, and Windows 11 installation.",
+    skills: ["PC assembly", "Hardware configuration", "Windows 11", "System validation"],
+    practice: "The lab focuses on checking that the system works after setup and troubleshooting problems that come up along the way.",
   },
   {
     title: "Azure Cost Visibility Dashboard",
@@ -47,8 +56,8 @@ export default function InfrastructureLabs({ showLearningAreas = false }: { show
     <section id="infrastructure-labs" className="mt-24 scroll-mt-24" aria-labelledby="infrastructure-labs-heading">
       <span className="font-display text-xs font-semibold uppercase tracking-[0.25em] text-accent">Hands-on learning</span>
       <h2 id="infrastructure-labs-heading" className="mt-3 font-display text-3xl font-bold tracking-tight sm:text-4xl">Infrastructure & cloud labs</h2>
-      <p className="mt-4 max-w-3xl text-muted">I use personal labs to practice the work behind a reliable service, from monitoring Linux hosts and tracing network failures to documenting recovery. My Azure lab explores how to track and investigate cloud spending.</p>
-      <div className="mt-8 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+      <p className="mt-4 max-w-3xl text-muted">I use personal labs to practice building and validating hardware, monitoring Linux hosts, tracing network failures, and documenting recovery. My Azure lab explores how to track and investigate cloud spending.</p>
+      <div className="mt-8 grid gap-6 md:grid-cols-2">
         {labs.map(({ title, href, icon: Icon, description, skills, practice }) => (
           <article key={title} className="flex flex-col rounded-4xl border border-ink/10 bg-card p-7 sm:p-8">
             <Icon size={32} className="text-accent" aria-hidden="true" />
